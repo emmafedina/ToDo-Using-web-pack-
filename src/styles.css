@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(211, 186, 235);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+h3 {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#leftProjectsList {
+  background-color: crimson;
+  height: 100vh;
+  /* will inherit width of left side */
+  width: 100%;
+  border-radius: 20px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#addProjects {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+#addProjects:hover {
+  background-color: #0d70d1;
+  transform: scale(1.03);
+}
+.projectDesc {
+  height: 40px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f0f8ff;
+}
+
+#mainPage {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 1.5rem;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.Project {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  width: 240px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+}
+
+.deleteBtn {
+  background-color: transparent;
+  color: crimson;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: color 0.2s ease;
+}
+
+.deleteBtn:hover {
+  color: darkred;
+}
+#leftSide {
+  background-color: rgb(116, 166, 210);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rightSide {
+  background-color: rgb(80, 80, 200);
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#spaceForProjects {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 10px;
+}
